@@ -1,22 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500&display=swap");
+.counter-ul {
+  padding: 25px;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  list-style-type: none; }
+
+.counter-li {
+  flex: 1;
+  text-align: center;
+  font-size: 50px;
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem; }
+
+.counter-text {
+  font-size: 2.2rem;
+  color: #979c9f; }
+
+.hours-worked:before {
+  content: "~"; }
+
+.satisfied-customers:after,
+.satisfied-employees:after {
+  content: "+";
+  display: inline-block; }
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: border-box; }
 
 html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box;
-  overflow-x: hidden;
-  font-family: 'Baloo Tamma 2', cursive;
-  height: 1000px; }
+  height: 2000px;
+  font-family: 'Baloo Tamma 2', cursive; }
+
+.info {
+  background-color: #343a40; }
+
+.header-contacts {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: white; }
+
+.header-contact {
+  display: inline-block;
+  padding: 1rem 1rem; }
+
+.languages {
+  display: inline-block;
+  transform: translateY(-0.7rem);
+  padding-right: 1rem; }
 
 .home-inner {
-  background-image: url(/img/BeFunky-collage2.jpg);
+  background-image: url(/img/landing-background2.jpg);
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -44,9 +86,7 @@ body {
 .landing-info-wrapper {
   display: flex; }
 
-.looking-job {
-  margin: 10rem auto; }
-
+.looking-job,
 .searching-hire {
   margin: 10rem auto; }
 
@@ -57,35 +97,46 @@ body {
   font-size: 2.2rem;
   font-weight: 600; }
 
-.info {
-  background-color: #343a40; }
-
-.header-contacts {
-  display: inline-block;
-  font-size: 1.5rem;
-  color: white; }
-
-.header-contact {
-  display: inline-block;
-  padding: 1rem 1rem; }
-
-.languages {
-  display: inline-block;
-  transform: translateY(-0.7rem);
-  padding-right: 1rem; }
-
-.nav-item {
-  padding-right: .7rem; }
-
 .navbar {
   font-weight: 700;
   font-size: 1.6rem;
   border: none;
-  background-color: white;
-  z-index: 5;
-  top: 0;
-  position: sticky;
-  height: 6rem; }
+  height: 6rem;
+  z-index: 999; }
+
+.nav-item {
+  padding-right: .7rem; }
 
 .navbar-brand {
   font-size: 1.6rem; }
+
+.navbar-collapse {
+  background-color: #343a40; }
+
+.about {
+  margin: 4rem; }
+  .about-h1 {
+    font-size: 4rem;
+    padding: 2rem; }
+  .about-p {
+    font-size: 2.5rem;
+    padding: 2rem; }
+
+.services {
+  margin: 4rem; }
+  .services-container {
+    padding: 25px;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: space-evenly; }
+  .services-wrapper {
+    border: 1px solid black; }
+  .services-img {
+    display: block;
+    margin: 0 auto; }
+  .services-h1 {
+    font-size: 4rem; }
+  .services-h2 {
+    font-size: 3rem; }
+  .services-p, .services-info {
+    font-size: 2.2rem; }

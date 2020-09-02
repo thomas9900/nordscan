@@ -2,13 +2,20 @@
     font-weight: 700;
     font-size: 1.6rem;
     border: none;
-    background-color: white;
-    z-index: 5;
-    top: 0;
-    position: sticky;
+    // top: 0;
+    // position: sticky;
     height: 6rem;
+    z-index: 999;
+}
+
+.nav-item {
+    padding-right: .7rem;
 }
 
 .navbar-brand {
     font-size: 1.6rem;
+}
+
+.navbar-collapse {
+    background-color: $color-grey-dark-1;
 }

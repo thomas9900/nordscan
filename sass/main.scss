@@ -2,7 +2,7 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-@import "components/button";
+@import "components/counter";
 
 @import "base/animations";
 @import "base/base";
@@ -13,6 +13,8 @@
 @import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
+@import "layout/about";
+
 
 @import "pages/home";
 

@@ -1,5 +1,27 @@
+.info {
+    background-color: $color-grey-dark-1;
+}
+
+.header-contacts {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: white;
+    
+}
+
+.header-contact {
+    display: inline-block;
+    padding: 1rem 1rem;
+}
+
+.languages {
+    display: inline-block;
+    transform: translateY(-.7rem);
+    padding-right: 1rem;
+}
+
 .home-inner {
-    background-image: url(/img/BeFunky-collage2.jpg);
+    background-image: url(/img/landing-background2.jpg);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -7,8 +29,6 @@
     filter: brightness(75%);
     background-attachment: fixed;
 }
-
-
 
 .caption {
     width: 100%;
@@ -23,29 +43,22 @@
 .caption h1 {
     font-size: 5rem;
     text-shadow: .1rem .1rem .8rem black;
-
 }
 
 .caption h3 {
     font-size: 3rem;
     text-shadow: .1rem .1rem .5rem black;
-
 }
 
 .landing-info-wrapper {
     display: flex;
-
 }
 
-
-.looking-job {
-    margin: 10rem auto;
-}
-
+.looking-job,
 .searching-hire {
     margin: 10rem auto;
-
 }
+
 
 .btn-lg {
     border-width: medium;
@@ -55,33 +68,3 @@
     font-weight: 600;
 }
 
-
-
-.info {
-    background-color: #343a40;
-}
-
-.header-contacts {
-    display: inline-block;
-    font-size: 1.5rem;
-    color: white;
-}
-
-.header-contact {
-    display: inline-block;
-    padding: 1rem 1rem;
-    
-}
-
-
-
-.languages {
-    display: inline-block;
-    transform: translateY(-.7rem);
-    padding-right: 1rem;
-
-}
-
-.nav-item {
-    padding-right: .7rem;
-}

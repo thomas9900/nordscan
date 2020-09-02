@@ -3,7 +3,9 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
+    // box-sizing: inherit;
+    
 }
 
 html {
@@ -12,9 +14,8 @@ html {
 }
 
 body {
-    box-sizing: border-box;
-    overflow-x: hidden;
+    height: 2000px;
+    // overflow-x: hidden;
     font-family: 'Baloo Tamma 2', cursive;
-    height: 1000px;
 
 }

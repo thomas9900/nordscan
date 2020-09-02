@@ -1,0 +1,59 @@
+.about {
+    
+
+    &-container {
+        // background: rgb(218, 218, 218);
+    }
+
+
+    margin: 4rem;
+    &-h1 {
+        font-size: $h1-font-size;
+        padding: 2rem;
+
+    }
+
+    &-p {
+        font-size: $p-font-size;
+        padding: 2rem;
+    }
+}
+
+.services {
+    margin: 4rem;
+
+    &-container {
+        padding: 25px;
+        max-width: 100%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        
+
+    }
+
+    &-wrapper {
+        border: 1px solid black;
+        
+
+    }
+
+    &-img {
+        display: block;
+        margin: 0 auto;
+
+    }
+
+    &-h1 {
+        font-size: $h1-font-size;
+        
+
+    }
+
+    &-h2 {
+        font-size: $h2-font-size;
+    }
+
+    &-p, &-info {
+        font-size: $p-font-size-s;
+    }
+}

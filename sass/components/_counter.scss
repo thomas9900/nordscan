@@ -1,0 +1,44 @@
+
+.counter {
+
+    &-ul {
+        // background-color: $color-grey-light-1;
+        padding: 25px;
+        // width: 800px;
+        max-width: 100%;
+        margin: 0 auto;
+        // display: flex;
+        // flex-wrap: wrap;
+        justify-content: space-between;
+        list-style-type: none;
+        
+    }
+
+    &-li {
+        flex: 1;
+        text-align: center;
+        font-size: 50px;
+        border: 1px solid black;
+        margin: 1rem;
+        padding: 2rem;
+    }
+
+    &-text {
+        font-size: 2.2rem;
+        color: $color-grey-light-2;
+    }
+}
+
+
+
+.hours-worked:before {
+    content: "~";
+    // display: inline-block;
+}
+
+.satisfied-customers:after,
+.satisfied-employees:after {
+    content: "+";
+    display: inline-block;
+}
+
