@@ -1,0 +1,119 @@
+.employers {
+
+    background-image: url('../images/backgrounds/crowd.jpg');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+    &-wrapper {
+
+        
+        background: rgba(9, 44, 68, 0.9);
+        background-size: cover;
+        color: white;
+        margin: 0;
+
+
+    }
+
+
+    &-h1,
+    &-why-h {
+        font-size: $h1-font-size;
+        text-align: center;
+        margin-top: 6rem;
+    }
+
+
+
+    &-h2 {
+        font-size: $h2-font-size;
+        text-align: center;
+        margin: 2rem auto;
+        width: 75%;
+    }
+
+
+    &-p {
+        font-size: $p-font-size;
+        width: 75%;
+        margin: 3rem auto;
+    }
+
+}
+
+
+.providing {
+
+    &-h {
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+        font-size: $h1-font-size;
+        text-align: center;
+    }
+
+    &-ul {
+        margin: 10rem auto;
+        max-width: 120rem;
+        max-height: 70rem;
+        
+
+    }
+
+    &-li {
+        background-image: url(/images/backgrounds/areas.png);
+        font-size: $h2-font-size;
+        border: 1px solid black;
+        list-style-type: none;
+        text-align: center;
+        padding: 7rem 0;
+    }
+}
+
+.interested {
+
+    padding: 7rem;
+    border: 10px solid $color-blue-1;
+
+    &-h {
+        margin-bottom: 4rem;
+        font-size: $h1-font-size;
+    }
+
+    &-ul {
+        margin: 5rem auto;
+        max-width: 120rem;
+        max-height: 70rem;
+        list-style: none;
+        counter-reset: my-awesome-counter;
+
+    }
+
+    &-li {
+        font-size: $p-font-size;
+        counter-increment: my-awesome-counter;
+
+        &::before {
+            content: counter(my-awesome-counter) ". ";
+            color: $color-blue-1;
+            font-weight: bold;
+        }
+    }
+
+    
+    &-p {
+        font-size: $p-font-size;
+        // max-width: 55rem;
+    }
+
+    &-button {
+        font-size: $h2-font-size;
+        background-color: $color-blue-1;
+        border: $color-blue-1;
+        padding: 2rem 3rem;
+        margin-top: 2rem;
+    }
+}
+

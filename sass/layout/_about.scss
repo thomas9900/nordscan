@@ -9,7 +9,7 @@
     margin: 4rem;
     &-h1 {
         font-size: $h1-font-size;
-        padding: 2rem;
+        text-align: center;
 
     }
 
@@ -27,33 +27,43 @@
         max-width: 100%;
         margin: 0 auto;
         justify-content: space-evenly;
-        
+
 
     }
 
     &-wrapper {
         border: 1px solid black;
-        
-
+        padding-top: 1rem;
     }
 
     &-img {
         display: block;
         margin: 0 auto;
-
+        
     }
 
     &-h1 {
         font-size: $h1-font-size;
-        
+        text-align: center;
+
 
     }
 
     &-h2 {
         font-size: $h2-font-size;
+        color: $color-blue-1;
+        font-weight: bold;
     }
 
-    &-p, &-info {
-        font-size: $p-font-size-s;
+    &-p {
+        font-size: $p-font-size;
+        text-align: center;
+    }
+
+    &-info {
+        font-size: $p-font-size;
+        width: 65vw;
+        margin: 0 auto;
     }
 }
+

@@ -9,9 +9,21 @@
     
 }
 
+
 .header-contact {
     display: inline-block;
     padding: 1rem 1rem;
+
+}
+
+.header-phone,
+.header-email {
+    color: white;
+}
+
+.header-phone:hover,
+.header-email:hover {
+    color: rgb(73, 173, 255);
 }
 
 .languages {

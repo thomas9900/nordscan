@@ -3,6 +3,8 @@
 @import "abstracts/variables";
 
 @import "components/counter";
+@import "components/cards";
+@import "components/contact";
 
 @import "base/animations";
 @import "base/base";
@@ -14,7 +16,8 @@
 @import "layout/header";
 @import "layout/navigation";
 @import "layout/about";
-
+@import "layout/employers";
+@import "layout/employees";
 
 @import "pages/home";
 
