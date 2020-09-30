@@ -59,6 +59,10 @@
 
 .cards-wrapper {
     padding: 0 7rem;
+
+    @include respond(phone) {
+        padding: 0;
+    }
 }
 
 .flip-card-h {

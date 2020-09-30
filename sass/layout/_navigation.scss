@@ -6,16 +6,17 @@
     // position: sticky;
     height: 6rem;
     z-index: 999 !important;
+
+    &-brand{
+        font-size: 1.6rem;
+    }
+
+    &-collapse {
+        background-color: $color-grey-dark-1;
+
+    }
 }
 
 .nav-item {
     padding-right: .7rem;
-}
-
-.navbar-brand {
-    font-size: 1.6rem;
-}
-
-.navbar-collapse {
-    background-color: $color-grey-dark-1;
 }

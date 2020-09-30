@@ -5,34 +5,26 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 75rem;
+    // height: 100vh;
+
+    @include respond(phone) {
+        
+    }
     
     &-wrapper {
         background-color: rgba(255, 255, 255, 0.733);
         margin: 10rem auto;
         padding: 7rem;
-        transform: translateY(9.5rem);
+        // transform: translateY(9.5rem);
 
-        @media screen and (max-width: 992px) {
-            transform: translateY(0rem);
-            padding: 1rem;
-            padding-top: 5rem;
-            height: 100%;
-        }
 
-        @media screen and (max-width: 768px) {
-            transform: translateY(0);
-            padding: 1rem;
-            padding-top: 5rem;
-            line-height: 1.2;
-        }
     }
 
 
 
     &-h1 {
         font-size: $h1-font-size;
-        margin: 1rem 0;
+        // margin: 1rem 0;
     }
 
     &-h2 {
@@ -58,6 +50,14 @@
 
     &-ul {
         font-size: $p-font-size;
+        
+    }
+
+    &-li {
+        color: $color-blue-1;
+        span {
+            color: black;
+        }
     }
 
     &-p {

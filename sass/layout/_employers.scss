@@ -49,13 +49,12 @@
 
     &-h {
         margin-top: 6rem;
-        margin-bottom: 4rem;
         font-size: $h1-font-size;
         text-align: center;
     }
 
     &-ul {
-        margin: 10rem auto;
+        margin: 4rem auto 7rem auto;
         max-width: 120rem;
         max-height: 70rem;
         
@@ -65,10 +64,12 @@
     &-li {
         background-image: url(/images/backgrounds/areas.png);
         font-size: $h2-font-size;
-        border: 1px solid black;
+        border: 1px solid $color-grey-light-1;
         list-style-type: none;
         text-align: center;
         padding: 7rem 0;
+        text-decoration: underline;
+        text-decoration-color: $color-blue-1;
     }
 }
 
@@ -77,9 +78,19 @@
     padding: 7rem;
     border: 10px solid $color-blue-1;
 
+    @include respond(phone) {
+        padding: 3rem;
+        margin-top: 15rem;
+    }
+
     &-h {
         margin-bottom: 4rem;
         font-size: $h1-font-size;
+
+        @include respond(phone) {
+            padding-top: 3rem;
+            margin-bottom: 0;
+        }
     }
 
     &-ul {
