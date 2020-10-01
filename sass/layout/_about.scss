@@ -85,6 +85,10 @@
         width: 65vw;
         margin: 0 auto;
         margin-bottom: 6rem;
+
+        @include respond(big-desktop) {
+            width: 50%;
+        }
     }
 }
 

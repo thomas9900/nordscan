@@ -362,6 +362,9 @@ body {
     width: 65vw;
     margin: 0 auto;
     margin-bottom: 6rem; }
+    @media only screen and (min-width: 112.5em) {
+      .services-info {
+        width: 50%; } }
 
 .employers {
   background-image: url("../images/backgrounds/crowd.jpg");
