@@ -24,6 +24,10 @@
         font-size: $h1-font-size;
         text-align: center;
         margin-top: 6rem;
+
+        @include respond(big-desktop) {
+            padding-bottom: 3rem;
+        }
     }
 
 

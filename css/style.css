@@ -377,6 +377,9 @@ body {
     font-size: 4rem;
     text-align: center;
     margin-top: 6rem; }
+    @media only screen and (min-width: 112.5em) {
+      .employers-h1, .employers-why-h {
+        padding-bottom: 3rem; } }
   .employers-h2 {
     font-size: 3rem;
     text-align: center;
