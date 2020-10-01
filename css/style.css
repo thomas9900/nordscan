@@ -135,6 +135,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   padding-top: 20px;
   margin-bottom: 0;
   /* If there's only 1 input make it full height */ }
+  @media only screen and (max-width: 37.5em) {
+    .cool-b4-form .form-group {
+      width: 70%; } }
   .cool-b4-form .form-group:first-child:last-child {
     height: 100%; }
     .cool-b4-form .form-group:first-child:last-child .form-control {
@@ -178,6 +181,10 @@ input[type="message"] {
   color: #5C9DD5; }
   .contact-fa-list {
     font-size: 2.2rem; }
+
+@media only screen and (max-width: 37.5em) {
+  .fa-last {
+    padding-bottom: 5rem; } }
 
 .contact-btn {
   margin-bottom: 8rem; }
@@ -244,13 +251,18 @@ body {
   padding-right: 1rem; }
 
 .home-inner {
-  background-image: url(/img/landing-background2.jpg);
   height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  filter: brightness(75%);
-  background-attachment: fixed; }
+  filter: brightness(75%); }
+
+.home-img {
+  float: left;
+  width: 50%;
+  height: 100%;
+  object-fit: cover; }
+  .home-img-construction {
+    border-right: 4px solid #bebebe; }
+  .home-img-contract {
+    border-left: 4px solid #bebebe; }
 
 .caption {
   width: 100%;
@@ -314,6 +326,9 @@ body {
   .about-p {
     font-size: 2.5rem;
     padding: 2rem; }
+    @media only screen and (min-width: 112.5em) {
+      .about-p {
+        padding: 4rem 30rem; } }
 
 .services {
   margin: 4rem; }
@@ -432,11 +447,30 @@ body {
   background-image: url("/images/backgrounds/work.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  height: 75rem; }
+  @media only screen and (max-width: 62em) {
+    .employees {
+      height: 100%;
+      margin-top: 9rem; } }
   .employees-wrapper {
     background-color: rgba(255, 255, 255, 0.733);
     margin: 10rem auto;
-    padding: 7rem; }
+    padding: 7rem;
+    transform: translateY(9.5rem); }
+    @media only screen and (max-width: 62em) {
+      .employees-wrapper {
+        height: 100%;
+        padding: 1rem;
+        padding-top: 3rem;
+        margin-top: 3rem;
+        transform: translateY(0); } }
+    @media only screen and (max-width: 37.5em) {
+      .employees-wrapper {
+        height: 100%;
+        padding: 1rem;
+        margin-top: 3rem;
+        transform: translateY(0); } }
   .employees-h1 {
     font-size: 4rem; }
   .employees-h2 {
@@ -457,6 +491,9 @@ body {
     color: #5C9DD5; }
     .will-li span {
       color: black; }
+    @media only screen and (max-width: 37.5em) {
+      .will-li {
+        margin-left: 2rem; } }
   .will-p {
     font-size: 2.5rem;
     margin: 2rem auto; }

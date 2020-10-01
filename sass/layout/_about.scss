@@ -9,6 +9,8 @@
         @include respond(phone) {
             padding: 0;
         }
+
+        
     }
 
 
@@ -26,7 +28,9 @@
         font-size: $p-font-size;
         padding: 2rem;
 
-        
+        @include respond(big-desktop) {
+            padding: 4rem 30rem;
+        }
     }
 }
 

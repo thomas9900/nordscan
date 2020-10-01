@@ -5,18 +5,40 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    // height: 100vh;
-
-    @include respond(phone) {
-        
+    height: 75rem;
+    @include respond(tab-port) {
+            height: 100%;
+            // transform: translateY(-9.5rem);
+            margin-top: 9rem;
+            
     }
+    
     
     &-wrapper {
         background-color: rgba(255, 255, 255, 0.733);
         margin: 10rem auto;
         padding: 7rem;
-        // transform: translateY(9.5rem);
+        transform: translateY(9.5rem);
 
+        @include respond(tab-port) {
+                
+            // transform: translateY(-9.5rem);
+            // margin-top: 15rem;
+
+            height: 100%;
+            padding: 1rem;
+            padding-top: 3rem;
+            margin-top: 3rem;
+            transform: translateY(0);
+
+        }
+
+        @include respond(phone) {
+                height: 100%;
+                padding: 1rem;
+                margin-top: 3rem;
+                transform: translateY(0);
+        }
 
     }
 
@@ -58,12 +80,17 @@
         span {
             color: black;
         }
+        
+        @include respond(phone) {
+                margin-left: 2rem;
+        }
+
     }
 
     &-p {
         font-size: $p-font-size;
         margin: 2rem auto;
 
-
+        
     }
 }

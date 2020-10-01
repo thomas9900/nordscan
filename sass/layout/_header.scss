@@ -32,14 +32,39 @@
     padding-right: 1rem;
 }
 
-.home-inner {
-    background-image: url(/img/landing-background2.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    filter: brightness(75%);
-    background-attachment: fixed;
+.home {
+    // background-image: url(/img/landing-background2.jpg);
+
+
+    &-inner {
+        height: 100vh;
+        filter: brightness(75%);
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // background-position: 50% 50%;
+        
+        // background-attachment: fixed;
+    }
+
+    &-img {
+        float: left;
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+
+        &-construction {
+            // border-left: 8px solid $color-grey-dark-1;
+            border-right: 4px solid $color-grey-light-1;
+
+        }
+
+        &-contract {
+            border-left: 4px solid $color-grey-light-1;
+            // border-right: 8px solid $color-grey-dark-1;
+
+        }
+    }
+
 }
 
 .caption {

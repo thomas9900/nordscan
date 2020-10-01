@@ -41,11 +41,14 @@ $underline-color: $color-blue-1;
 }
 .form-group {
     font-size: $p-font-size-s;
-
-
     position: relative;
     padding-top: 20px;
     margin-bottom: 0;
+
+    @include respond(phone) {
+            width: 70%;
+    }
+
     /* If there's only 1 input make it full height */
     &:first-child:last-child {
         height: 100%;
@@ -105,6 +108,15 @@ input[type="message"]
 
     &-list {
         font-size: $p-font-size-s;
+    }
+
+}
+
+.fa-last {
+
+    @include respond(phone) {
+            padding-bottom: 5rem;
+
     }
 }
 
