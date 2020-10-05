@@ -135,9 +135,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   padding-top: 20px;
   margin-bottom: 0;
   /* If there's only 1 input make it full height */ }
-  @media only screen and (max-width: 37.5em) {
-    .cool-b4-form .form-group {
-      width: 70%; } }
   .cool-b4-form .form-group:first-child:last-child {
     height: 100%; }
     .cool-b4-form .form-group:first-child:last-child .form-control {
@@ -182,7 +179,7 @@ input[type="message"] {
   .contact-fa-list {
     font-size: 2.2rem; }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 62em) {
   .fa-last {
     padding-bottom: 5rem; } }
 
@@ -284,6 +281,12 @@ body {
 .landing-info-wrapper {
   display: flex; }
 
+.landing-btn {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+
+.landing-btn:hover {
+  text-shadow: none; }
+
 .looking-job,
 .searching-hire {
   margin: 10rem auto; }
@@ -365,6 +368,10 @@ body {
     @media only screen and (min-width: 112.5em) {
       .services-info {
         width: 50%; } }
+    @media only screen and (max-width: 37.5em) {
+      .services-info {
+        width: 100%;
+        padding: 2rem; } }
 
 .employers {
   background-image: url("../images/backgrounds/crowd.jpg");
@@ -392,6 +399,9 @@ body {
     font-size: 2.5rem;
     width: 75%;
     margin: 3rem auto; }
+    @media only screen and (max-width: 37.5em) {
+      .employers-p {
+        width: 100%; } }
 
 .providing-h {
   margin-top: 6rem;

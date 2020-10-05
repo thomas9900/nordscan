@@ -45,9 +45,7 @@ $underline-color: $color-blue-1;
     padding-top: 20px;
     margin-bottom: 0;
 
-    @include respond(phone) {
-            width: 70%;
-    }
+
 
     /* If there's only 1 input make it full height */
     &:first-child:last-child {
@@ -70,15 +68,19 @@ $underline-color: $color-blue-1;
         bottom: 0;
         transition: width 0.4s ease;
     }
+
     label {
         position: absolute;
         left: 10px;
         top: 25px;
         transition: all 0.4s ease;
     }
+
     .form-control {
         border-radius: 0;
         border-width: 0 0 2px 0;
+
+
     &:focus,
     &.hasValue {
         box-shadow: none;
@@ -95,6 +97,7 @@ $underline-color: $color-blue-1;
     }
 }
 }
+
 
 input[type="text"],
 input[type="email"],
@@ -114,7 +117,7 @@ input[type="message"]
 
 .fa-last {
 
-    @include respond(phone) {
+    @include respond(tab-port) {
             padding-bottom: 5rem;
 
     }
