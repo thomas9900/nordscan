@@ -290,6 +290,11 @@ body {
 .looking-job,
 .searching-hire {
   margin: 10rem auto; }
+  @media only screen and (max-width: 37.5em) {
+    .looking-job,
+    .searching-hire {
+      width: 45%;
+      transform: translateY(-10%); } }
 
 .btn-lg {
   border-width: medium;

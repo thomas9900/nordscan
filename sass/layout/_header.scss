@@ -102,6 +102,12 @@
 .looking-job,
 .searching-hire {
     margin: 10rem auto;
+
+    @include respond(phone) {
+        width: 45%;
+        transform: translateY(-10%);
+
+    }
 }
 
 
