@@ -303,6 +303,15 @@ body {
   font-size: 2.2rem;
   font-weight: 600; }
 
+.modal {
+  font-size: 1.6rem; }
+
+.close {
+  font-size: 2.2rem; }
+
+.selection {
+  font-size: 1.6rem; }
+
 .navbar {
   font-weight: 700;
   font-size: 1.6rem;
